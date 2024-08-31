@@ -6,7 +6,7 @@
   font-family: public;
   src: url(../fonts/PublicSans-Regular.ttf);
 }
-
+// basic style ***
 *,
 *::before,
 *::after {
@@ -15,18 +15,20 @@
   box-sizing: border-box;
 }
 
-// root
-$h_color: #36536B;
-$p_color: #6C8294;
-$who_we_bg_color: #1B262F;
-$btn_color:#BA4270;
+// root ***
+$h_color: #36536b;
+$p_color: #6c8294;
+$who_we_bg_color: #1b262f;
+$btn_color: #ba4270;
 
 html {
   font-size: 62.5%;
+  // font size 1rem = 10px
 }
-body{
-  background-color: #EDF3F8;
 
+body {
+  // proect bg color
+  background-color: #edf3f8;
 }
 
 a {
@@ -43,8 +45,8 @@ button {
   cursor: pointer;
 }
 
-img{
-    max-width: 100%;
+img {
+  max-width: 100%;
 }
 
 h1,
@@ -54,8 +56,10 @@ h4 {
   font-family: dm_serif;
 }
 
-P,span,a{
-    font-family: public;
+P,
+span,
+a {
+  font-family: public;
 }
 
 .container {
@@ -63,24 +67,25 @@ P,span,a{
   margin: 0 auto;
 }
 
-.btn{
-    padding: 1.6rem 4.6rem 1.4rem 5rem;
-    background-color: $btn_color;
-    color: #FBFCFE;
-    border-radius: 4rem;
-    font-size: 1.5rem;
-    line-height: 1.7rem;
-    font-weight: 700;
+.btn {
+  // default button style
+  padding: 1.6rem 4.6rem 1.4rem 5rem;
+  background-color: $btn_color;
+  color: #fbfcfe;
+  border-radius: 4rem;
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+  font-weight: 700;
 }
 
-@media screen and (min-width:768px) {
-    .container{
-      max-width: 68.9rem;
-    }
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 68.9rem;
+  }
 }
 
-@media screen and (min-width: 1440px){
-    .container{
-        max-width: 1110px;
-    }
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1110px;
+  }
 }

@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  background-color: #EDF3F8;
+  background-color: #edf3f8;
 }
 
 a {
@@ -47,7 +47,9 @@ h4 {
   font-family: dm_serif;
 }
 
-P, span, a {
+P,
+span,
+a {
   font-family: public;
 }
 
@@ -58,8 +60,8 @@ P, span, a {
 
 .btn {
   padding: 1.6rem 4.6rem 1.4rem 5rem;
-  background-color: #BA4270;
-  color: #FBFCFE;
+  background-color: #ba4270;
+  color: #fbfcfe;
   border-radius: 4rem;
   font-size: 1.5rem;
   line-height: 1.7rem;
@@ -148,7 +150,7 @@ header .header_bottom h1 {
   font-weight: 400;
   line-height: 3.6rem;
   text-align: center;
-  color: #36536B;
+  color: #36536b;
   padding-top: 2.5rem;
   padding-bottom: 2.4rem;
 }
@@ -305,7 +307,7 @@ header .header_bottom p a {
   background-image: url(../imgs/partners_bg.svg);
   background-repeat: no-repeat;
   padding: 8rem 0;
-  background-color: #1B262F;
+  background-color: #1b262f;
 }
 .partners .partners_top {
   display: grid;
@@ -418,7 +420,7 @@ header .header_bottom p a {
   font-weight: 400;
   line-height: 2.8rem;
   text-align: center;
-  color: #6C8294;
+  color: #6c8294;
 }
 
 @media screen and (min-width: 768px) {
@@ -565,14 +567,14 @@ header .header_bottom p a {
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 2.5rem;
-  color: #36536B;
+  color: #36536b;
   padding-bottom: 1.6rem;
   padding-top: 3.3rem;
 }
 .billing_info .billing_info_cards .billing_info_card p {
   font-size: 1.5rem;
   line-height: 2.5rem;
-  color: #6C8294;
+  color: #6c8294;
 }
 
 @media screen and (min-width: 768px) {
@@ -662,7 +664,7 @@ footer {
   background-image: url(../imgs/footer_bg.svg);
   background-position: bottom;
   background-repeat: no-repeat;
-  background-color: #1B262F;
+  background-color: #1b262f;
   padding: 4rem 0 5.5rem;
 }
 footer .container {
@@ -671,19 +673,24 @@ footer .container {
   align-items: center;
   gap: 4rem;
 }
-footer .container ul li {
+footer .container .footer_left {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+footer .container .footer_left ul li {
   text-align: center;
   padding-bottom: 3rem;
 }
-footer .container ul li a {
+footer .container .footer_left ul li a {
   font-family: public;
   font-size: 1.5rem;
   line-height: 1.7rem;
   font-weight: 700;
-  color: #FBFCFE;
+  color: #fbfcfe;
   opacity: 70%;
 }
-footer .container ul li:last-child {
+footer .container .footer_left ul li:last-child {
   padding-bottom: 0px;
 }
 footer .container .links {
@@ -702,13 +709,18 @@ footer .container .links {
     flex-direction: row;
     justify-content: space-between;
   }
-  footer .container ul {
+  footer .container .footer_left {
+    flex-direction: row;
+    align-items: center;
+    gap: 6.4rem;
+  }
+  footer .container .footer_left ul {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 4rem;
   }
-  footer .container ul li {
+  footer .container .footer_left ul li {
     padding-bottom: 0;
   }
 }
