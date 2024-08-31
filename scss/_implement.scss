@@ -1,0 +1,72 @@
+.implement {
+  padding: 8rem 0;
+  .implement_top {
+    img {
+      width: 44.5rem;
+      box-shadow: 5rem 5rem 8rem #36536B40;
+      border-radius: 1rem;
+    }
+  }
+  .implement_bottom {
+    h2 {
+      font-size: 3.2rem;
+      font-weight: 400;
+      line-height: 3.6rem;
+      color: #36536b;
+      text-align: center;
+      padding-top: 4.8rem;
+      padding-bottom: 2.4rem;
+    }
+    p {
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 2.8rem;
+      text-align: center;
+      color: #6C8294;
+    }
+  }
+}
+
+@media screen and (min-width:768px){
+  .implement_top{
+    text-align: center;
+    img{
+      width: 41rem;
+    }
+  }
+  .implement_bottom{
+    width: 57.3rem;
+    margin-left: auto;
+    margin-right: auto;
+    h2{
+      font-size: 4.8rem !important;
+      line-height: 5.6rem;
+    }
+  }
+}
+
+@media screen and (min-width:1440px){
+  .implement{
+    padding: 15rem 0;
+    .container{
+      display: flex;
+      align-items: center;
+      gap: 12.5rem;
+      .implement_top{
+        width: 50%;
+      }
+      .implement_bottom{
+        width: 50%;
+        margin-left: 0;
+        margin-right: 0;
+        h2{
+          text-align: start;
+        }
+        p{
+          text-align: start;
+          width: 44.5rem;
+        }
+      }
+    }
+  }
+}
